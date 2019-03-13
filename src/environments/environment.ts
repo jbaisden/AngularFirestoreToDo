@@ -6,11 +6,11 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: "YOUR_API_KEY",
-    authDomain: "YOUR_DOMAIN_URL",
-    databaseURL: "YOUR_DB_URL",
-    projectId: "YOUR_PROJECT_ID",
-    storageBucket: "YOUR_STORAGE_URL",
-    messagingSenderId: "YOUR_MESSENGER_ID"
+    apiKey: "AIzaSyAYCpMk5pAkY7kn9iK85xBEvBuwEWFGOwQ",
+    authDomain: "tododemoangularfirestore.firebaseapp.com",
+    databaseURL: "https://tododemoangularfirestore.firebaseio.com",
+    projectId: "tododemoangularfirestore",
+    storageBucket: "",
+    messagingSenderId: "599332338681"
   }
 };
