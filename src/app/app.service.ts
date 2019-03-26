@@ -1,11 +1,8 @@
 import { config } from "./app.config";
 import { Task } from "./app.model";
 import { Injectable } from "@angular/core";
-import {
-  AngularFirestoreDocument,
-  AngularFirestore,
-  AngularFirestoreCollection
-} from "angularfire2/firestore";
+import { AngularFirestore, AngularFirestoreDocument, AngularFirestoreCollection } from '@angular/fire/firestore';
+import * as firebase from 'firebase';
 
 @Injectable()
 export class TaskService {
@@ -13,6 +10,8 @@ export class TaskService {
   private taskDoc: AngularFirestoreDocument<Task>;
 
   constructor(private db: AngularFirestore) {
+    console.log("TaskService constructor loaded.");
+
     //Get the tasks collecction
     this.tasks = db.collection<Task>(config.collection_endpoint);
   }

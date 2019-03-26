@@ -19,7 +19,9 @@ export class AppComponent implements OnInit {
   editMode: boolean = false;
   taskToEdit: any = {};
 
-  constructor(private db: AngularFirestore, private taskService: TaskService) { }
+  constructor(private db: AngularFirestore, private taskService: TaskService) {
+    console.log("app.component.ts constructor loaded.");
+  }
 
   async getCollection() {
     this.tasks = await this.db.collection(config.collection_endpoint)
