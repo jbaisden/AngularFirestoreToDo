@@ -1,7 +1,7 @@
 import { TaskService } from "./app.service";
 import { config } from "./app.config";
 import { Component, OnInit } from "@angular/core";
-import { Observable } from "rxjs/Observable";
+import { Observable } from "rxjs";
 import { switchMap, map, shareReplay } from 'rxjs/operators';
 
 import { Task } from "./app.model";
