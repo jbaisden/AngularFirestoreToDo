@@ -13,7 +13,8 @@ export class TaskService {
     console.log("TaskService constructor loaded.");
 
     //Get the tasks collecction
-    this.tasks = db.collection<Task>(config.collection_endpoint);
+    // this.tasks = db.collection<Task>(config.collection_endpoint);
+
   }
 
   addTask(task) {
