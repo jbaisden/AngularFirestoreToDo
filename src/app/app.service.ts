@@ -19,7 +19,8 @@ export class TaskService {
 
   addTask(task) {
     //Add the new task to the collection
-    this.tasks.add(task);
+    // this.tasks.add(task);
+    this.db.collection(`${config.collection_endpoint}`).add(task);
   } //addTask
 
   updateTask(id, update) {

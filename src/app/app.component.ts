@@ -30,7 +30,7 @@ export class AppComponent implements OnInit {
         map(actions => {
           return actions.map(a => {
             const data: Object = a.payload.doc.data();
-            const id = 4; // a.payload.doc.id;
+            const id = a.payload.doc.id;
             return { id, ...data };
           });
         })
