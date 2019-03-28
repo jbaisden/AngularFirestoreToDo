@@ -23,8 +23,8 @@ export class AppComponent implements OnInit {
     console.log("app.component.ts constructor loaded.");
   }
 
-  async getCollection() {
-    this.tasks = await this.db.collection(config.collection_endpoint)
+  getCollection() {
+    this.tasks = this.db.collection(config.collection_endpoint)
       .snapshotChanges()
       .pipe(
         map(actions => {
